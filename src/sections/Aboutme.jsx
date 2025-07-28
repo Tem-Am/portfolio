@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/button";
-const Achievements = () => {
+const Aboutme = () => {
   return (
     <section
       id="hero"
@@ -14,11 +14,12 @@ const Achievements = () => {
           <Button className="w-40 h-12" page="/experience" text="Experience" />
         </div>
         <h1 className="text-4xl font-bold text-center">
-          Certfications and Achievements
+          Who is Temuulen Amarjargal AKA Tem?
         </h1>
+        
       </div>
     </section>
   );
 };
 
-export default Achievements;
+export default Aboutme;

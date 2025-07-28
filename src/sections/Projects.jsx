@@ -44,7 +44,7 @@ const Project = () => {
         <div className="flex flex-row items-stretch gap-x-6">
           <Button className="w-40 h-12" page="/" text="Main Page" />
           <Button className="w-40 h-12" page="/experience" text="Experience" />
-          <Button className="w-40 h-12" page="/achievements" text="C&A" />
+          <Button className="w-40 h-12" page="/aboutme" text="About Me" />
         </div>
         <h1 className="text-4xl font-bold text-center">My Projects</h1>
 

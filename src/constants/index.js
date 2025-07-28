@@ -1,5 +1,5 @@
 export const words = [
-    {text: "Ideas", imgPath: ""},
+    {text: "About Me", imgPath: ""},
     {text: "Experience", imgPath: ""},
     {text: "Projects", imgPath: ""}
 ]

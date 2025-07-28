@@ -29,6 +29,11 @@ const Home = () => {
           </div>
           <Button
             className="md:w-80 md:h-16 w-60 h-12"
+            page="/aboutme"
+            text="About Me"
+          />
+          <Button
+            className="md:w-80 md:h-16 w-60 h-12"
             page="/project"
             text="Projects"
           />
@@ -36,11 +41,6 @@ const Home = () => {
             className="md:w-80 md:h-16 w-60 h-12"
             page="/experience"
             text="Experience"
-          />
-          <Button
-            className="md:w-80 md:h-16 w-60 h-12"
-            page="/achievements"
-            text="Certificates and Achievements"
           />
         </div>
       </div>
