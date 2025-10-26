@@ -22,10 +22,10 @@ export function Homepage() {
               infrastructure that make technology more efficient and accessible.
             </p>
             <div className="flex mb-14 gap-4 justify-center">
-              <button className="px-8 py-3 border-2 bg-gradient-to-r from-violet-600 to-orange-300 text-black rounded-full hover:shadow-lg hover:scale-105 transition-all">
+              <button className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all">
                 View Projects
               </button>
-              <button className="px-8 py-3 border-2 bg-gradient-to-r from-violet-600 to-orange-300 text-black  rounded-full hover:shadow-lg hover:scale-105 transition-all">
+              <button className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all">
                 Get in Touch
               </button>
             </div>
