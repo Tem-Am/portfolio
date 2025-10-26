@@ -1,12 +1,14 @@
 import { ExternalLink } from 'lucide-react';
+import Image from 'next/image';
+import appimage from '../../public/pictures/Signup.png';
 
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
+    title: 'Golf Application',
     description: 'A modern e-commerce platform with real-time inventory management and seamless checkout.',
-    image: 'https://images.unsplash.com/photo-1700887937204-69f8b8400ace?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGRlc2lnbiUyMHByb2plY3R8ZW58MXx8fHwxNzYxMTYxNjc0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    tags: ['React', 'Node.js', 'MongoDB'],
+    image: '',
+    tags: ['React', 'Node.js', 'PostgreSQL'],
     span: 'md:col-span-2 md:row-span-2',
   },
   {
@@ -41,7 +43,7 @@ export function Projects() {
       <div className="container mx-auto max-w-6xl">
         <div>
           <h2 className="text-5xl mb-4 text-center bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent leading-tight pb-2">
-            Featured Projects
+            Projects
           </h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
             A collection of my recent work showcasing creative solutions and technical expertise.
@@ -54,6 +56,11 @@ export function Projects() {
               key={project.id}
               className={`group relative rounded-3xl overflow-hidden ${project.span} cursor-pointer transition-transform hover:scale-[1.02]`}
             >
+              <Image
+                src={appimage }
+                alt={project.title}
+                fill
+                className="object-cover object-center"/>
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-90 transition-opacity" />
               
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
