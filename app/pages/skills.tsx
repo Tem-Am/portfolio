@@ -1,29 +1,69 @@
-import { Code2, Palette, Rocket, Users } from 'lucide-react';
+import { Code2, Palette, Rocket, Users } from "lucide-react";
 
 const skills = [
   {
-    category: 'Development',
+    category: "Programing Languages",
     icon: Code2,
-    items: ['React', 'TypeScript', 'Node.js', 'Next.js', 'Tailwind CSS', 'GraphQL'],
-    color: 'violet',
+    items: [
+      "Pyton",
+      "C++",
+      "TypeScript",
+      "JavaScrip",
+      "Swift",
+      "Go",
+      "SQL",
+      "Mathlab",
+      "R",
+      "Assembly",
+    ],
+    color: "violet",
   },
   {
-    category: 'Design',
+    category: "Frameworks & Libraries",
     icon: Palette,
-    items: ['Figma', 'UI/UX Design', 'Prototyping', 'Design Systems', 'Accessibility', 'User Research'],
-    color: 'purple',
+    items: [
+      "React",
+      "Node.js",
+      "Next.js",
+      ".NET",
+      "Pandas",
+      "NumPy",
+      "TensorFlow",
+      "Keras",
+      "SwiftUI",
+      "Rest APIs",
+    ],
+    color: "violet",
   },
   {
-    category: 'Tools',
+    category: "Tools & Platforms",
     icon: Rocket,
-    items: ['Git', 'Docker', 'AWS', 'CI/CD', 'Testing', 'Analytics'],
-    color: 'pink',
+    items: [
+      "Git",
+      "Docker",
+      "AWS",
+      "CI/CD",
+      "Jira",
+      "PostgreSQL",
+      "HTML",
+      "SQL",
+      "Testing",
+      "Analytics",
+    ],
+    color: "violet",
   },
   {
-    category: 'Soft Skills',
+    category: "Soft Skills",
     icon: Users,
-    items: ['Team Leadership', 'Communication', 'Problem Solving', 'Agile', 'Mentoring', 'Documentation'],
-    color: 'indigo',
+    items: [
+      "Team Leadership",
+      "Communication",
+      "Problem Solving",
+      "Agile",
+      "Mentoring",
+      "Documentation",
+    ],
+    color: "violet",
   },
 ];
 
@@ -52,9 +92,11 @@ export function Skills() {
                   <div className={`p-3 bg-${skill.color}-100 rounded-xl`}>
                     <Icon className={`w-6 h-6 text-${skill.color}-600`} />
                   </div>
-                  <h3 className="text-gray-900 leading-normal">{skill.category}</h3>
+                  <h3 className="text-gray-900 leading-normal">
+                    {skill.category}
+                  </h3>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {skill.items.map((item) => (
                     <span
@@ -74,10 +116,16 @@ export function Skills() {
         <div className="mt-20 bg-gradient-to-r from-violet-600 to-purple-600 rounded-3xl p-12 text-white">
           <h3 className="text-3xl mb-6 text-center">About Me</h3>
           <p className="text-lg text-white/90 max-w-3xl mx-auto text-center leading-relaxed">
-            I'm a passionate developer and designer with over 6 years of experience creating 
-            beautiful, functional digital experiences. I love turning complex problems into 
-            simple, elegant solutions. When I'm not coding, you'll find me exploring new 
-            design trends, contributing to open source, or sharing knowledge with the community.
+            I’m a Software Engineer with a strong foundation in computer science
+            and applied mathematics, passionate about building scalable,
+            data-driven, and intelligent systems. I specialize in full-stack
+            development, AI-powered solutions, and cloud infrastructure that
+            make technology more efficient and accessible. My experience spans
+            from developing full-stack web applications to optimizing backend
+            systems and experimenting with applied machine learning. I enjoy
+            turning complex problems into elegant, high-performance software
+            through clean architecture, experimentation, and continuous
+            learning.
           </p>
           <div className="flex justify-center gap-8 mt-8">
             <div className="text-center">

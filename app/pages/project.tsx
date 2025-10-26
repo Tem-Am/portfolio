@@ -1,39 +1,33 @@
-import { ExternalLink } from 'lucide-react';
-import Image from 'next/image';
-import appimage from '../../public/pictures/Signup.png';
-
+import { ExternalLink } from "lucide-react";
+import Image from "next/image";
+import Job from "../../public/pictures/job.png";
+import Processor from "../../public/pictures/processor.jpg";
+import Golfapp from "../../public/pictures/golf.jpg";
 const projects = [
   {
     id: 1,
-    title: 'Golf Application',
-    description: 'A modern e-commerce platform with real-time inventory management and seamless checkout.',
-    image: '',
-    tags: ['React', 'Node.js', 'PostgreSQL'],
-    span: 'md:col-span-2 md:row-span-2',
+    title: "Golf Application",
+    description:
+      "Built a cross-platform mobile app with React Native that helps golfers improve through professional tips and video lessons. Developed the backend with Node.js and PostgreSQL to enable real-time data storage, secure authentication, and cloud synchronization. Designed a clean, responsive UI with smooth video integration.",
+    image: Golfapp,
+    tags: ["React Native", "Node.js", "PostgreSQL", "Jira", "Figma"],
+    span: "md:col-span-1 md:row-span-2",
   },
   {
     id: 2,
-    title: 'Design System',
-    description: 'Comprehensive design system with 50+ reusable components.',
-    image: 'https://images.unsplash.com/photo-1630283017802-785b7aff9aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc2MTEyMDcxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    tags: ['Figma', 'React', 'Storybook'],
-    span: 'md:col-span-1 md:row-span-1',
+    title: "Customized Processor",
+    description: "Designed and implemented a custom VHDL processor in Vivado with a 5-stage pipeline. Built an assembler in Python to translate assembly code to machine code. Created a testbench to simulate and verify functionality, ensuring efficient execution and hazard handling. Gained experience in computer architecture and digital logic design.",
+    image: Processor,
+    tags: ["VHDL", "Pyton", "Assymbly", "Vivado", "Computer Architecture", "Digital Logic"],
+    span: "md:col-span-1 md:row-span-2",
   },
   {
     id: 3,
-    title: 'AI Chat Assistant',
-    description: 'Intelligent chatbot with natural language processing.',
-    image: 'https://images.unsplash.com/photo-1640963269654-3fe248c5fba6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdyYWRpZW50JTIwYmFja2dyb3VuZHxlbnwxfHx8fDE3NjEwOTQ0MDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    tags: ['Python', 'OpenAI', 'FastAPI'],
-    span: 'md:col-span-1 md:row-span-1',
-  },
-  {
-    id: 4,
-    title: 'Portfolio Website',
-    description: 'Creative portfolio with unique animations and interactions.',
-    image: 'https://images.unsplash.com/photo-1630283017802-785b7aff9aac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3b3Jrc3BhY2UlMjBkZXNrfGVufDF8fHx8MTc2MTEyMDcxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    tags: ['Next.js', 'Tailwind', 'Motion'],
-    span: 'md:col-span-2 md:row-span-1',
+    title: " Job tracker app with AI analytics",
+    description: "Developed a full-stack job tracking web app with SwiftUI, Node.js, and Express. Used MongoDB for data storage and integrated the OpenAI API for AI-driven insights into job search patterns. Designed an intuitive and responsive interface for seamless user experience across devices.",
+    image: Job,
+    tags: ["SwiftUI", "Node.js", "Express", "MongoDB", "OpenAI API"],
+    span: "md:col-span-1 md:row-span-2",
   },
 ];
 
@@ -46,7 +40,8 @@ export function Projects() {
             Projects
           </h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-            A collection of my recent work showcasing creative solutions and technical expertise.
+            There are projects that I have worked on independently as well as
+            collaboratively in teams.
           </p>
         </div>
 
@@ -57,16 +52,19 @@ export function Projects() {
               className={`group relative rounded-3xl overflow-hidden ${project.span} cursor-pointer transition-transform hover:scale-[1.02]`}
             >
               <Image
-                src={appimage }
+                src={project.image}
                 alt={project.title}
                 fill
-                className="object-cover object-center"/>
+                className="object-cover object-center"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-60 group-hover:opacity-90 transition-opacity" />
-              
+
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
                 <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform">
-                  <h3 className="text-white mb-2 leading-normal">{project.title}</h3>
-                  <p className="text-white/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <h3 className="text-white text-2xl mb-2 leading-normal">
+                    {project.title}
+                  </h3>
+                  <p className="text-white/80 text-sm mb-4 ">
                     {project.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mb-4">
