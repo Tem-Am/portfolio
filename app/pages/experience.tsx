@@ -49,17 +49,14 @@ const experiences = [
 export function Experience() {
   return (
     <section
-      className="py-24 px-6 bg-gradient-to-b from-white to-violet-50"
+      className="px-6 bg-gradient-to-b from-white to-violet-50"
       id="experience"
     >
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl mb-4 bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent leading-tight pb-2">
+        <div className="text-center mb-12">
+          <h2 className="text-5xl bg-clip-text text-gray-900 leading-tight pb-2">
             Experience
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            My professional journey building impactful digital products.
-          </p>
         </div>
 
         <div className="relative">

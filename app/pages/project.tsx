@@ -36,7 +36,7 @@ export function Projects() {
     <section className="py-24 px-6 bg-white" id="projects">
       <div className="container mx-auto max-w-6xl">
         <div>
-          <h2 className="text-5xl mb-4 text-center bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent leading-tight pb-2">
+          <h2 className="text-5xl mb-4 text-center text-gray-900 bg-clip-text leading-tight pb-2">
             Projects
           </h2>
           <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
