@@ -1,3 +1,4 @@
+"use client";
 export function Homepage() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-gradient-to-br from-violet-50 via-purple-50 to-pink-50">
@@ -22,10 +23,34 @@ export function Homepage() {
               infrastructure that make technology more efficient and accessible.
             </p>
             <div className="flex mb-14 gap-4 justify-center">
-              <button className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all">
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("projects")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all"
+              >
                 View Projects
               </button>
-              <button className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all">
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("experience")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all"
+              >
+                View Experience
+              </button>
+              <button
+                onClick={() =>
+                  document
+                    .getElementById("contact")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                className="px-8 py-3 bg-gradient-to-r from-violet-600 to-orange-300 text-amber-50 rounded-full hover:shadow-lg hover:scale-105 transition-all"
+              >
                 Get in Touch
               </button>
             </div>
