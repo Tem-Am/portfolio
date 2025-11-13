@@ -5,16 +5,29 @@ const experiences = [
     id: 1,
     title: "Full Stack Software Engineer",
     company: "Surface Experts",
-    period: "Jan 2025 - May 2025",
+    period: "Jan 2025 - June 2025",
     achievements: [
-      "Developed a secure franchise management section of an internal React and Node.js app, enabling HQ and employees with proper credentials to easily create, update, and manage franchise data and operations",
+      "Developed a secure franchise management section of an internal React and Node.js app, enabling HQ and employees with proper credentials to easily create, update, and manage franchise data and operations.",
       "Wrote and optimized SQL queries and backend logic, improving data retrieval speed by approximately 15%.",
-      "Built a separate full-stack image processing app using Node.js and React, allowing employees to upload before-and-after repair photos, automatically generate combined images, and displaying for marketing and internal use.",
-      "Integrated automatic WebP conversion to reduce image load times by 30% and file sizes by 60% during testing, while preserving original PNG files for download.",
+      "Collaborated with a senior engineer to test and debug pre-deployment features by identifying edge cases, validating user flows, and resolving issues across backend and frontend, resulting in a more stable and maintainable system",
+      "Built a full-stack image processing app (Node.js, React) that uploaded images to a cloud server (AWS S3) and stored metadata locally, automating image merging and WebP conversion to improve marketing page performance.",
+      "Integrated automatic WebP conversion and cloud storage on S3, reducing image load times by 30% and file sizes by about 60% while retaining original files for download.",
     ],
   },
   {
     id: 2,
+    title: "Software Engineer",
+    company: "Pinecone Studio",
+    period: "Jan 2023 - Dec 2024",
+    achievements: [
+      "Built an automated onboarding service with Node.js and Google Workspace API that created Gmail, Slack, GitHub, and HR accounts, reducing manual setup time from 2 hours to 15 minutes per hire.",
+      "Integrated Slack, GitHub, and internal access systems through secure service accounts and REST APIs, ensuring new employees received correct permissions on day one without IT intervention.",
+      "Containerized all onboarding components using Docker and deployed to Kubernetes, enabling auto-recovery and horizontal scaling during peak hiring periods, which cut IT workload by 70%.",
+      "Implemented a CI/CD pipeline with GitHub Actions for automated builds, testing, and zero-downtime deployments, using caching and parallel runs to reduce deployment time from 3 hours to 10 minutes and improve reliability.",
+    ],
+  },
+  {
+    id: 3,
     title: "Deep Learning Research Assistant",
     company: "Whitworth University",
     period: "Jun 2023 - Dec 2023",
@@ -24,18 +37,16 @@ const experiences = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Teaching Assistant - DataBase Systems",
     company: "Whitworth University",
-    period: "Feb 2024 - May 2024",
+    period: "Jan 2024 - May 2024",
     achievements: [
-      "Built 20+ responsive websites",
-      "Implemented accessibility standards",
-      "Optimized SEO performance",
+      "Provided in-class support to almost 40 students by clarifying database concepts and assisting with assignments and projects, helping improve students’ confidence and course completion rates.",
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Mathematics and Computer Science Tutor and grader",
     company: "Whitworth University.",
     period: "Sep 2022 - Dec 2024",
@@ -91,9 +102,11 @@ export function Experience() {
                   </div>
                   <div className="space-y-2">
                     {exp.achievements.map((achievement, i) => (
-                      <div key={i} className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 rounded-full bg-violet-400 mt-2" />
-                        <p className="text-sm text-gray-700">{achievement}</p>
+                      <div key={i} className="flex gap-2 items-start">
+                        <p className="text-black">-</p>
+                        <p className="text-sm text-gray-700 leading-normal">
+                          {achievement}
+                        </p>
                       </div>
                     ))}
                   </div>

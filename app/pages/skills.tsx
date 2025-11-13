@@ -25,6 +25,7 @@ const skills = [
       "React",
       "Node.js",
       "Next.js",
+      "Express.js",
       ".NET",
       "Pandas",
       "NumPy",
@@ -41,12 +42,12 @@ const skills = [
     items: [
       "Git",
       "Docker",
+      "Kubernetes",
       "AWS",
       "CI/CD",
       "Jira",
       "PostgreSQL",
-      "HTML",
-      "SQL",
+      "MongoDb",
       "Testing",
       "Analytics",
     ],
@@ -71,7 +72,7 @@ export function Skills() {
   return (
     <section className="py-24 px-6 bg-white" id="skills">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h2 className="text-5xl mb-4 bg-clip-text text-neutral-900 leading-tight pb-2">
             Skills & Expertise
           </h2>

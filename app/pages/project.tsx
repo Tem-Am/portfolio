@@ -15,10 +15,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Customized Processor",
-    description: "Designed and implemented a custom VHDL processor in Vivado with a 5-stage pipeline. Built an assembler in Python to translate assembly code to machine code. Created a testbench to simulate and verify functionality, ensuring efficient execution and hazard handling. Gained experience in computer architecture and digital logic design.",
+    title: "Career Coach",
+    description: "Built a fully custom AI-powered chatbot for a React-based web application using the OpenAI API. Implemented a secure Node.js/Express backend to handle API calls, manage conversation context, and protect secrets. Designed a responsive chat UI with real-time message handling, loading states, and smooth user experience. Optimized token usage, error handling, and multi-turn conversation flow to provide reliable, fast AI assistance within the app.",
     image: Processor,
-    tags: ["VHDL", "Pyton", "Assymbly", "Vivado", "Computer Architecture", "Digital Logic"],
+    tags: ["React", "Node.js", "TypeScript", "MongoDB", "OpenAI", "AWS S3", "SQL"],
     span: "md:col-span-1 md:row-span-2",
   },
   {
